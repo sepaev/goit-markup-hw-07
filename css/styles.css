@@ -243,7 +243,7 @@ button {
   transition: color var(--standart-timer) var(--standart-timing-function);
 }
 
-.current {
+.nav__link--current {
   color: var(--active-link-color);
 }
 
@@ -263,22 +263,22 @@ footer .container {
   width: 100%;
 }
 
-.contacts-container {
+.footer-contacts {
   text-align: left;
 }
 
-.logo-link-footer {
+.footer__logo {
   display: block;
   color: var(--white-color);
   margin-bottom: 20px;
   line-height: 1.19;
 }
 
-.contacts-footer {
+.footer-contacts__set {
   display: block;
 }
 
-.contact-footer {
+.footer__contact {
   display: block;
   font-weight: normal;
   padding-bottom: 9px;
@@ -286,7 +286,7 @@ footer .container {
   color: var(--passive-link-color-footer);
 }
 
-.contact-link.map {
+.contact--map {
   display: block;
   color: var(--white-color);
   padding-bottom: 9px;
