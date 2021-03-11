@@ -15,33 +15,36 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <a class="logo-link-header" href="./index.html"
-          ><span class="logo-main">Web</span>Studio</a
+      <div class="container header__container">
+        <a class="logo header__logo" href="./index.html"
+          ><span class="logo__first-word">Web</span>Studio</a
         >
         <nav>
           <ul class="nav">
-            <li><a class="nav-link" href="./index.html">Студия</a></li>
-            <li><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
-            <li>
-              <a class="nav-link current" href="./contacts.html">Контакты</a>
+            <li class="nav__item">
+              <a class="nav__link" href="./index.html">Студия</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--current" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="./contacts.html">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="contacts-header">
-          <li>
-            <a
-              class="contact-link contact-head"
-              href="mailto:info@devstudio.com"
-            >
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a class="contact header__contact" href="mailto:info@devstudio.com">
               <svg class="mail" width="16" height="12">
                 <use href="./images/svg/sprite.svg#icon-mail-icon"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li>
-            <a class="contact-link contact-head" href="tel:+380961111111">
+          <li class="contacts__item">
+            <a class="contact header__contact" href="tel:+380961111111">
               <svg class="phone" width="10" height="16">
                 <use href="./images/svg/sprite.svg#icon-phone-icon"></use>
               </svg>
@@ -51,8 +54,8 @@
         </ul>
       </div>
     </header>
-    <section class="container contacts-section">
-      <h2 class="section-title">Где нас найти</h2>
+    <section class="container page-contacts__section">
+      <h2 class="section-title page-contacts__title">Где нас найти</h2>
       <iframe
         class="google-map"
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10167.117734551863!2d30.538386!3d50.426581!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf0e033ecbe9%3A0x57a4dffefec77da0!2z0LHRg9C7LiDQm9C10YHQuCDQo9C60YDQsNC40L3QutC4LCAyNiwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1613290061493!5m2!1sru!2sua"

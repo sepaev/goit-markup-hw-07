@@ -87,6 +87,7 @@ p {
 a {
   text-decoration: none; /* Отменяю подчеркивание у ссылок */
   background: transparent;
+  font-style: normal;
 }
 
 a:active,
@@ -167,17 +168,17 @@ button {
   margin: auto;
 }
 
-.nav__item:not(:last-child) {
+.header-nav__item:not(:last-child) {
   margin-right: var(--standart-50px);
 }
 
-.nav__link {
+.header-nav__link {
   position: relative;
   color: var(--main-text-color);
   font-weight: 500;
 }
 
-.current::after {
+.header-nav__link--current::after {
   content: '';
   width: 100%;
   height: 4px;
@@ -190,25 +191,21 @@ button {
   display: inline-block;
 }
 
-.nav,
-.contacts {
+.header-nav,
+.header-contacts {
   display: flex;
   font-weight: 500;
   letter-spacing: 0.02em;
   margin-left: auto;
 }
 
-.contacts__item {
+.header-contacts__item {
   display: inline-flex;
   color: var(--passive-link-color);
 }
 
-.header__contact {
+.header-contacts__link {
   color: var(--passive-link-color);
-}
-
-.contact {
-  font-style: normal; /*убираю курсив*/
   letter-spacing: 0.03em;
 }
 
@@ -224,26 +221,26 @@ button {
   margin-left: 30px;
 }
 
-.nav-link,
+.header-nav__link,
 .contact-link,
 .contact-link.map,
-.contacts-header li {
+.header-contacts__item {
   transition: color var(--standart-timer) var(--standart-timing-function);
 }
 
-.nav-link:hover,
+.header-nav__link:hover,
 .contact-link:hover,
 .contact-link.map:hover,
-.contacts-header li:hover,
-.nav-link:focus,
+.header-contacts__item:hover,
+.header-nav__link:focus,
 .contact-link:focus,
 .contact-link.map:focus,
-.contacts-header li:focus {
+.header-contacts__item:focus {
   color: var(--active-link-color);
   transition: color var(--standart-timer) var(--standart-timing-function);
 }
 
-.nav__link--current {
+.header-nav__link--current {
   color: var(--active-link-color);
 }
 
@@ -436,7 +433,7 @@ main {
   margin: auto;
 }
 
-.hero-title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -448,7 +445,7 @@ main {
   margin-bottom: var(--standart-30px);
 }
 
-.main-button {
+.hero__button {
   height: 50px;
   display: block;
   background: var(--active-link-color);
@@ -465,17 +462,22 @@ main {
     background var(--standart-timer) var(--standart-timing-function);
 }
 
-.main-button:hover,
-.main-button:focus {
+.hero__button:hover,
+.hero__button:focus {
   background: var(--button-hover-color);
 }
 
 /* особенности */
 .section-studio {
   display: block;
+  width: auto;
+  padding: var(--standart-94px) var(--standart-15px);
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
 }
 
-.features-icon-container {
+.features__icon {
   padding: 0;
   border: 0;
   width: 100%;
@@ -495,16 +497,16 @@ main {
   margin: 25px;
 }
 
-.features-content {
+.features__content {
   display: flex;
   padding-bottom: var(--standart-94px);
 }
 
-.features-content li {
+.features__content li {
   width: 270px;
 }
 
-.features-content li:not(:last-child) {
+.features__content li:not(:last-child) {
   margin-right: var(--standart-30px);
 }
 
@@ -883,7 +885,7 @@ main {
   background: var(--white-color);
 }
 
-.contacts-section .section-title {
+.page-contacts__title {
   padding-bottom: var(--standart-50px);
 }
 

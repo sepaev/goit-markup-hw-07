@@ -16,31 +16,38 @@
   <body>
     <!-- ШАПКА -->
     <header class="header">
-      <div class="container">
-        <a class="logo-link-header" href="./index.html"
-          ><span class="logo-main">Web</span>Studio</a
+      <div class="container header__container">
+        <a class="logo header__logo" href="./index.html"
+          ><span class="logo__first-word">Web</span>Studio</a
         >
         <nav>
-          <ul class="nav">
-            <li><a class="nav-link current" href="./index.html">Студия</a></li>
-            <li><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
-            <li><a class="nav-link" href="./contacts.html">Контакты</a></li>
+          <ul class="header-nav">
+            <li class="header-nav__item">
+              <a
+                class="header-nav__link header-nav__link--current"
+                href="./index.html"
+                >Студия</a
+              >
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="./contacts.html">Контакты</a>
+            </li>
           </ul>
         </nav>
-        <ul class="contacts-header">
-          <li>
-            <a
-              class="contact-link contact-head"
-              href="mailto:info@devstudio.com"
-            >
+        <ul class="header-contacts">
+          <li class="header-contacts__item">
+            <a class="header-contacts__link" href="mailto:info@devstudio.com">
               <svg class="mail" width="16" height="12">
                 <use href="./images/svg/sprite.svg#icon-mail-icon"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li>
-            <a class="contact-link contact-head" href="tel:+380961111111">
+          <li class="header-contacts__item">
+            <a class="header-contacts__link" href="tel:+380961111111">
               <svg class="phone" width="10" height="16">
                 <use href="./images/svg/sprite.svg#icon-phone-icon"></use>
               </svg>
@@ -50,24 +57,27 @@
         </ul>
       </div>
     </header>
+
     <main>
-      <!--/* Герой */-->
+      <!--/* Секция герой */-->
       <section class="hero">
-        <h1 class="hero-title">
+        <h1 class="hero__title">
           Эффективные решения <br />
           для вашего бизнеса
         </h1>
-        <button class="main-button" data-modal-open href="">
+        <button class="hero__button" data-modal-open href="">
           <span>Заказать услугу</span>
         </button>
       </section>
-      <section class="section-studio container">
+
+      <!-- Секция студия -->
+      <section class="section-studio">
         <!--/* Особенности */-->
-        <div class="features-container">
+        <div class="features__container">
           <h2 class="visually-hidden">Особенности</h2>
-          <ul class="features-content">
+          <ul class="features__content">
             <li>
-              <div class="features-icon-container">
+              <div class="features__icon">
                 <svg class="features-icon">
                   <use href="./images/svg/sprite.svg#satellite-img"></use>
                 </svg>
@@ -116,6 +126,7 @@
             </li>
           </ul>
         </div>
+
         <!--/* Чем мы занимаемся */-->
         <div class="work-container">
           <h2 class="section-title">Чем мы занимаемся</h2>
@@ -141,7 +152,8 @@
           </ul>
         </div>
       </section>
-      <!--/* Наша команда */-->
+
+      <!--/* Секция наша команда */-->
       <section class="team-section">
         <div class="container team">
           <h2 class="section-title">Наша команда</h2>
@@ -317,6 +329,8 @@
           </ul>
         </div>
       </section>
+
+      <!-- Секция постоянные клиенты -->
       <section class="container clients-section">
         <h2 class="clients-title">Постоянные клиенты</h2>
         <ul class="clients-set">
