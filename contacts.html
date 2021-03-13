@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Контакты - goit-markup-hw-07</title>
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -20,31 +19,33 @@
           ><span class="logo__first-word">Web</span>Studio</a
         >
         <nav>
-          <ul class="nav">
-            <li class="nav__item">
-              <a class="nav__link" href="./index.html">Студия</a>
+          <ul class="header-nav">
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="./index.html">Студия</a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link nav__link--current" href="./portfolio.html"
-                >Портфолио</a
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="header-nav__item">
+              <a
+                class="header-nav__link header-nav__link--current"
+                href="./contacts.html"
+                >Контакты</a
               >
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="./contacts.html">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="contacts">
-          <li class="contacts__item">
-            <a class="contact header__contact" href="mailto:info@devstudio.com">
+        <ul class="header-contacts">
+          <li class="header-contacts__item">
+            <a class="header-contacts__link" href="mailto:info@devstudio.com">
               <svg class="mail" width="16" height="12">
                 <use href="./images/svg/sprite.svg#icon-mail-icon"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="contacts__item">
-            <a class="contact header__contact" href="tel:+380961111111">
+          <li class="header-contacts__item">
+            <a class="header-contacts__link" href="tel:+380961111111">
               <svg class="phone" width="10" height="16">
                 <use href="./images/svg/sprite.svg#icon-phone-icon"></use>
               </svg>
@@ -70,29 +71,29 @@
     <footer>
       <!--/* Подвал */-->
       <div class="container">
-        <div class="contacts-container">
-          <a class="logo-link-footer" href="./index.html"
-            ><span class="logo-main">Web</span>Studio</a
+        <div class="footer-contacts">
+          <a class="logo footer__logo" href="./index.html"
+            ><span class="logo__first-word">Web</span>Studio</a
           >
           <h3 class="visually-hidden">Контакты</h3>
-          <address class="address">
-            <ul class="contacts-footer">
+          <address class="footer-contacts__address">
+            <ul class="footer-contacts__set">
               <li>
                 <a
-                  class="contact-link map"
+                  class="contact contact--map"
                   href="https://goo.gl/maps/ZJ7xZnVnSobTsskUA"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
               <li>
                 <a
-                  class="contact-link contact-footer"
+                  class="contact footer__contact"
                   href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
               <li>
-                <a class="contact-link contact-footer" href="tel:+380961111111"
+                <a class="contact footer__contact" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>

@@ -1,0 +1,73 @@
+.form-mailing {
+  display: inline-flex;
+  width: 100%;
+  margin-top: 12px;
+  margin-left: var(--standart-94px);
+  justify-content: flex-end;
+}
+
+.mailing-label {
+  display: inline-flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.mailing-label span {
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.footer-email-input {
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px var(--black-15color));
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.footer-email-input,
+.footer-email-input::placeholder {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+
+  color: var(--passive-link-color-footer);
+}
+
+.subscribe-button {
+  min-width: 200px;
+  height: 50px;
+  background-color: var(--active-link-color);
+  box-shadow: 0px 4px 4px var(--black-15color);
+  border-radius: 4px;
+
+  font-size: 16px;
+  line-height: 1.875;
+  font-weight: bold;
+  letter-spacing: 0.06em;
+  justify-content: center;
+
+  display: flex;
+  padding: 10px 0px;
+  margin-top: 36px;
+  margin-left: 12px;
+
+  transition: background-color var(--standart-timer)
+    var(--standart-timing-function);
+}
+
+.subscribe-button:hover {
+  background-color: var(--button-hover-color);
+}
+
+.send-icon {
+  margin-left: 10px;
+}

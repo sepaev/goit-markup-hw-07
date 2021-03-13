@@ -1,0 +1,38 @@
+:root {
+  --main-text-color: #212121; /* цвет заголовка #212121 */
+  --secondary-text-color: #757575; /* основной цвет текста #757575 */
+  --main-background-color: #e5e5e5; /* основной цвет фона #E5E5E5 */
+  --secondary-background-color: #2f303a; /* дополнительный цвет фона #2F303A */
+
+  --button-hover-color: #188ce8; /*цвет активной кнопки #188CE8 */
+  --active-link-color: #2196f3; /* цвет активной ссылки #2196F3 */
+  --passive-link-color: #757575; /* цвет пассивной ссылки #757575 */
+  --passive-link-color-footer: rgba(255, 255, 255, 0.6);
+  --logo-main-color: #2196f3; /* лого цвет основной #2196F3 */
+  --black-color: #000000; /* черный цвет #000000 */
+  --white-color: #ffffff; /* белый цвет #FFFFFF */
+  --light-grey-color: #f5f4fa; /* светло-серый цвет #F5F4FA */
+  --border-color: #ececec; /* цвет границы #ECECEC */
+  --banner-color: #2f303a; /* цвет фона за героем #2F303A */
+  --border-color-outline: #eee; /* цвет границы #EEEEEE */
+  --grey-color: #afb1b8; /*серый цвет #AFB1B8 */
+  --black-15color: rgba(0, 0, 0, 0.15); /*черный цвет 15% rgba(0, 0, 0, 0.15) */
+  --passive-background-color: #afb1b8; /*цвет кнопки неактивный #AFB1B8 */
+  --social-passive-footer-color: #fff; /*цвет кнопки социальной сети в футере неактивный #FFFFFF */
+  --social-active-color: #fff; /*цвет кнопки социальной сети активный #FFFFFF */
+  --social-bg-active-color: #2196f3; /*цвет фона социальной сети активный #2196F3 */
+  --social-background-main-color: #fff; /*цвет фона социальной сети неактивный #FFFFFF */
+  --social-background-footer-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /*цвет фона социальной сети footer неактивный rgba(255, 255, 255, 0.1) */
+  --focus-outline: 0.1px solid#afb1b870;
+  --standart-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --standart-timer: 250ms;
+  --standart-15px: 15px;
+  --standart-30px: 30px;
+  --standart-50px: 50px;
+  --standart-94px: 94px;
+}

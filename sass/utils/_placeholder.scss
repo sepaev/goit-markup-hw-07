@@ -1,0 +1,12 @@
+%blue-transition {
+  color: var(--active-link-color);
+  transition: color var(--standart-timer) var(--standart-timing-function);
+}
+
+%grey-transition {
+  color: var(--active-link-color);
+  transition: color var(--standart-timer) var(--standart-timing-function);
+}
+%standart-transition {
+  transition: color var(--standart-timer) var(--standart-timing-function);
+}
