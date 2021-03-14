@@ -1217,11 +1217,11 @@ main {
   display: none;
 }
 
-.modal__check-input:checked + .modal__check-svgicon {
+.modal__check-input:checked ~ .modal__check-svgicon {
   border: none;
 }
 
-.modal__check-input:checked + .modal__check-useicon {
+.modal__check-input:checked + .modal__check-svgicon .modal__check-useicon {
   display: block;
 }
 

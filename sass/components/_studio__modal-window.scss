@@ -173,11 +173,11 @@
     display: none;
   }
   
-  &__check-input:checked + &__check-svgicon  {
+  &__check-input:checked ~ &__check-svgicon  {
     border: none;
   }
   
-  &__check-input:checked + &__check-useicon {
+  &__check-input:checked + &__check-svgicon &__check-useicon {
     display: block;
   }
   
