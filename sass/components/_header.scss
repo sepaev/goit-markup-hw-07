@@ -20,7 +20,7 @@
   margin-left: auto;
 
   &__link {
-    @extend %standart-transition;
+    @extend %standart-transition--color;
     position: relative;
     color: var(--main-text-color);
     font-weight: 500;
@@ -83,7 +83,7 @@
 }
 
 .contact--map {
-  @extend %standart-transition;
+  @extend %standart-transition--color;
 }
 
 .contact--map:hover,

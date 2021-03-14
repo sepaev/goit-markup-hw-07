@@ -1,0 +1,87 @@
+.social-button {
+  padding: 0;
+  border: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  cursor: pointer;
+  align-items: flex-start;
+  display: inline-block;
+  text-align: center;
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    text-align: center;
+    margin: 12px;
+  }
+}
+
+.footer-social {
+  margin-top: 12px;
+  margin-left: 70px;
+
+  &__title {
+    font-size: 14px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    padding-bottom: 20px;
+    text-align: left;
+  }
+
+  &__set {
+    display: inline-flex;
+    justify-content: space-between;
+    line-height: 0;
+    width: 206px;
+    color: var(--social-background-footer-color);
+  }
+
+  &__button {
+    color: var(--social-passive-footer-color);
+    background: var(--social-background-footer-color);
+
+    transition: color var(--standart-timer) var(--standart-timing-function),
+      background var(--standart-timer) var(--standart-timing-function);
+  }
+
+  &__button:hover,
+  &__button:focus {
+    background: var(--social-bg-active-color);
+  }
+}
+
+.team-social {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  line-height: 0;
+
+  &__button {
+    color: var(--grey-color);
+    background: var(--social-background-main-color);
+
+    transition: color var(--standart-timer) var(--standart-timing-function),
+      background var(--standart-timer) var(--standart-timing-function);
+  }
+
+  &__button:hover,
+  &__button:focus {
+    color: var(--social-active-color);
+    background: var(--social-bg-active-color);
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-align: left;
+  }
+}

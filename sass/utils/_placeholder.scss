@@ -7,6 +7,12 @@
   color: var(--active-link-color);
   transition: color var(--standart-timer) var(--standart-timing-function);
 }
-%standart-transition {
+
+%standart-transition--color {
   transition: color var(--standart-timer) var(--standart-timing-function);
+}
+
+%standart-transition--background-color {
+  transition: background-color var(--standart-timer)
+    var(--standart-timing-function);
 }
