@@ -1,0 +1,211 @@
+
+.backdrop {
+  @extend .section;
+  @extend %standart-transition--opacity;
+  display: flex;
+  padding: 0px;
+  position: fixed;
+  align-items: center;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+
+  
+  &__is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  min-width: 528px;
+  max-height: 90vh;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 40px;
+
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+  }
+  
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  &__wrapper {
+    position: relative;
+  }
+
+  &__input,
+  &__label,
+  &__textarea {
+    width: 100%;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.01em;
+  }
+
+  &__input-icon {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    fill: currentColor;
+    text-align: center;
+    left: 12px;
+    top: 11px;
+    pointer-events: none;
+  }
+  
+  &__button-close {
+    @extend %standart-transition--color_and_border-color;
+    display: inline-flex;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    top: 8px;
+    right: 8px;
+  
+    fill: currentColor;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+  }
+  
+  &__button-close:hover,
+  &__button-close:focus {
+    color: var(--active-link-color);
+    border-color: var(--active-link-color);
+  }
+  
+  &__input,
+  &__label,
+  &__textarea,
+  &__input-icon {
+    transition: fill var(--standart-timer) var(--standart-timing-function),
+      border-color var(--standart-timer) var(--standart-timing-function),
+      outline var(--standart-timer) var(--standart-timing-function),
+      color var(--standart-timer) var(--standart-timing-function);
+  }
+  
+  &__input:focus,
+  &__input:hover,
+  &__textarea:focus,
+  &__textarea:hover,
+  &__input:focus ~   &__input-icon,
+  &__input:hover ~   &__input-icon {
+    fill: var(--active-link-color);
+    color: var(--active-link-color);
+    border-color: var(--active-link-color);
+    outline: none;
+  }
+  
+  &__label {
+    padding-bottom: 4px;
+    text-align: left;
+    color: var(--secondary-text-color);
+  }
+  
+  &__input {
+    color: var(--main-text-color);
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 12px 12px 12px 42px;
+    margin-bottom: 10px;
+  }
+  
+  &__textarea {
+    width: 448px;
+    min-width: 448px;
+    max-width: 600px;
+  
+    height: 120px;
+    min-height: 120px;
+    max-height: 250px;
+    color: var(--main-text-color);
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  &__textarea::placeholder {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+  
+    color: rgba(117, 117, 117, 0.5);
+  }
+  
+  &__check-label {
+    margin-bottom: var(--standart-30px);
+  }
+  
+  &__check-svgicon {
+    border: 2px solid var(--main-text-color);
+    border-radius: 2px;
+    margin-right: 8.38px;
+  }
+  
+  &__check-useicon {
+    display: none;
+  }
+  
+  &__check-input:checked + &__check-svgicon  {
+    border: none;
+  }
+  
+  &__check-input:checked + &__check-useicon {
+    display: block;
+  }
+  
+  &__check-text {
+    color: var(--secondary-text-color);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+  
+  &__check-link {
+    color: var(--active-link-color);
+    text-decoration: underline;
+  }
+
+  &__button-send {
+    @extend %standart-button;
+
+    font-weight: bold;
+    margin: auto;
+    width: 200px;
+    height: 50px;
+    letter-spacing: 0.06em;
+    display: block;
+  }
+  
+  &__button-send:hover,
+  &__button-send:focus {
+    background-color: var(--button-hover-color);
+  }
+}

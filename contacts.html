@@ -55,10 +55,10 @@
         </ul>
       </div>
     </header>
-    <section class="container page-contacts__section">
-      <h2 class="section-title page-contacts__title">Где нас найти</h2>
+    <section class="contacts">
+      <h2 class="section-title contacts__title">Где нас найти</h2>
       <iframe
-        class="google-map"
+        class="contacts__google-map"
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10167.117734551863!2d30.538386!3d50.426581!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf0e033ecbe9%3A0x57a4dffefec77da0!2z0LHRg9C7LiDQm9C10YHQuCDQo9C60YDQsNC40L3QutC4LCAyNiwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1613290061493!5m2!1sru!2sua"
         width="600"
         height="450"
@@ -68,9 +68,9 @@
         tabindex="0"
       ></iframe>
     </section>
-    <footer>
+    <footer class="footer">
       <!--/* Подвал */-->
-      <div class="container">
+      <div class="container footer__container">
         <div class="footer-contacts">
           <a class="logo footer__logo" href="./index.html"
             ><span class="logo__first-word">Web</span>Studio</a
@@ -80,53 +80,55 @@
             <ul class="footer-contacts__set">
               <li>
                 <a
-                  class="contact contact--map"
+                  class="footer-contacts__link footer-contacts__link--map"
                   href="https://goo.gl/maps/ZJ7xZnVnSobTsskUA"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
               <li>
                 <a
-                  class="contact footer__contact"
+                  class="footer-contacts__link footer-contacts__link--contact"
                   href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
               <li>
-                <a class="contact footer__contact" href="tel:+380961111111"
+                <a
+                  class="footer-contacts__link footer-contacts__link--contact"
+                  href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
             </ul>
           </address>
         </div>
-        <div class="social-container">
-          <h3 class="social-container-title">присоединяйтесь</h3>
-          <ul class="social footer">
+        <div class="footer-social">
+          <h3 class="footer__title">присоединяйтесь</h3>
+          <ul class="footer-social__set">
             <li>
-              <a href="#" class="social-button-footer">
-                <svg class="button-icon" width="44" height="44">
+              <a href="#" class="social-button footer-social__button">
+                <svg class="social-button__icon" width="44" height="44">
                   <use href="./images/svg/sprite.svg#main-ig-icon"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#" class="social-button-footer">
-                <svg class="button-icon" width="44" height="44">
+              <a href="#" class="social-button footer-social__button">
+                <svg class="social-button__icon" width="44" height="44">
                   <use href="./images/svg/sprite.svg#main-twitter-icon"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#" class="social-button-footer">
-                <svg class="button-icon" width="44" height="44">
+              <a href="#" class="social-button footer-social__button">
+                <svg class="social-button__icon" width="44" height="44">
                   <use href="./images/svg/sprite.svg#main-fb-icon"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#" class="social-button-footer">
-                <svg class="button-icon" width="44" height="44">
+              <a href="#" class="social-button footer-social__button">
+                <svg class="social-button__icon" width="44" height="44">
                   <use href="./images/svg/sprite.svg#main-in-icon"></use>
                 </svg>
               </a>
@@ -134,25 +136,29 @@
           </ul>
         </div>
         <form class="form-mailing">
-          <label class="mailing-label" for="email-footer">
-            <span>Подпишитесь на рассылку</span>
+          <label class="form-mailing__email-label" for="email-footer">
+            <span class="footer__title">Подпишитесь на рассылку</span>
             <input
               type="mail"
               id="email-footer"
               name="email"
               placeholder="E-mail"
-              class="footer-email-input"
+              class="form-mailing__email-input"
             />
           </label>
-          <button type="submit" class="subscribe-button" value="subscribe">
-            <span>Подписаться</span>
-            <svg class="send-icon" width="24" height="24">
+          <button
+            type="submit"
+            class="form-mailing__subscribe-button"
+            value="subscribe"
+          >
+            <span class="form-mailing__text">Подписаться</span>
+            <svg class="form-mailing__button-icon" width="24" height="24">
               <use href="./images/svg/sprite.svg#icon-send"></use>
             </svg>
           </button>
         </form>
       </div>
-      <div class="made">
+      <div class="made-by">
         <hr class="divider" />
         <span
           >2021 | Made by Sepaev. GoIt Student. Fe Core 33 Online. ReactTeam

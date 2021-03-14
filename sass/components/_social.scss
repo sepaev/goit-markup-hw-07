@@ -42,11 +42,9 @@
   }
 
   &__button {
+    @extend %standart-transition--color_and_background;
     color: var(--social-passive-footer-color);
     background: var(--social-background-footer-color);
-
-    transition: color var(--standart-timer) var(--standart-timing-function),
-      background var(--standart-timer) var(--standart-timing-function);
   }
 
   &__button:hover,
@@ -62,11 +60,9 @@
   line-height: 0;
 
   &__button {
+    @extend %standart-transition--color_and_background;
     color: var(--grey-color);
     background: var(--social-background-main-color);
-
-    transition: color var(--standart-timer) var(--standart-timing-function),
-      background var(--standart-timer) var(--standart-timing-function);
   }
 
   &__button:hover,

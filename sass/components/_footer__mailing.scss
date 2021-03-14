@@ -5,7 +5,7 @@
   margin-left: var(--standart-94px);
   justify-content: flex-end;
 
-  &__label {
+  &__email-label {
     display: inline-flex;
     width: 100%;
     flex-direction: column;
@@ -16,11 +16,9 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 1.25;
-
     display: flex;
     align-items: center;
     letter-spacing: 0.03em;
-
     color: var(--passive-link-color-footer);
   }
 
@@ -33,37 +31,26 @@
     background-color: transparent;
   }
 
-  &__subscribe-button {
-    min-width: 200px;
-    height: 50px;
-    background-color: var(--active-link-color);
-    box-shadow: 0px 4px 4px var(--black-15color);
-    border-radius: 4px;
-
+  &__text {
+    @extend .footer__title;
+    text-transform: capitalize;
     font-size: 16px;
     line-height: 1.875;
-    font-weight: bold;
-    letter-spacing: 0.06em;
-    justify-content: center;
+  }
 
-    display: flex;
+  &__subscribe-button {
+    @extend %standart-button;
+
+    min-width: 200px;
+    height: 50px;
     padding: 10px 0px;
-    margin-top: 36px;
-    margin-left: 12px;
+    margin: 36px auto auto 12px;
+    letter-spacing: 0.06em;
 
-    @extend %standart-transition--background-color;
   }
 
   &__subscribe-button:hover {
     background-color: var(--button-hover-color);
-  }
-
-  &__text {
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--white-color);
-    margin-bottom: 20px;
-    text-align: left;
   }
 
   &__button-icon {
