@@ -1413,6 +1413,7 @@ main {
 
 .footer-contacts__set {
   display: block;
+  width: 231px;
 }
 
 .footer-contacts__link {
