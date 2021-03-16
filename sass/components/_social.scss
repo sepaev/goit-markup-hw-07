@@ -1,4 +1,4 @@
-.social-button {
+.social-link  {
   padding: 0;
   border: 0;
   width: 44px;
@@ -41,14 +41,14 @@
     color: var(--social-background-footer-color);
   }
 
-  &__button {
+  &__link {
     @extend %standart-transition--color_and_background;
     color: var(--social-passive-footer-color);
     background: var(--social-background-footer-color);
   }
 
-  &__button:hover,
-  &__button:focus {
+  &__link:hover,
+  &__link:focus {
     background: var(--social-bg-active-color);
   }
 }
@@ -59,14 +59,14 @@
   width: 100%;
   line-height: 0;
 
-  &__button {
+  &__link {
     @extend %standart-transition--color_and_background;
     color: var(--grey-color);
     background: var(--social-background-main-color);
   }
 
-  &__button:hover,
-  &__button:focus {
+  &__link:hover,
+  &__link:focus {
     color: var(--social-active-color);
     background: var(--social-bg-active-color);
   }

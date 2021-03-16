@@ -424,7 +424,7 @@ template {
   transition: opacity var(--standart-timer) var(--standart-timing-function);
 }
 
-.footer-social__button, .team-social__button {
+.footer-social__link, .team-social__link {
   -webkit-transition: color var(--standart-timer) var(--standart-timing-function), background var(--standart-timer) var(--standart-timing-function);
   transition: color var(--standart-timer) var(--standart-timing-function), background var(--standart-timer) var(--standart-timing-function);
 }
@@ -576,7 +576,7 @@ main {
   width: 100%;
 }
 
-.section, .section__studio, .hero, .team, .clients, .backdrop, .portfolio, .contacts {
+.section, .hero, .features, .work, .team, .clients, .backdrop, .portfolio, .contacts {
   display: block;
   margin: auto;
   max-width: 1200px;
@@ -701,7 +701,7 @@ main {
   color: var(--active-link-color);
 }
 
-.social-button {
+.social-link {
   padding: 0;
   border: 0;
   width: 44px;
@@ -715,7 +715,7 @@ main {
   text-align: center;
 }
 
-.social-button__icon {
+.social-link__icon {
   width: 20px;
   height: 20px;
   fill: currentColor;
@@ -750,12 +750,12 @@ main {
   color: var(--social-background-footer-color);
 }
 
-.footer-social__button {
+.footer-social__link {
   color: var(--social-passive-footer-color);
   background: var(--social-background-footer-color);
 }
 
-.footer-social__button:hover, .footer-social__button:focus {
+.footer-social__link:hover, .footer-social__link:focus {
   background: var(--social-bg-active-color);
 }
 
@@ -770,12 +770,12 @@ main {
   line-height: 0;
 }
 
-.team-social__button {
+.team-social__link {
   color: var(--grey-color);
   background: var(--social-background-main-color);
 }
 
-.team-social__button:hover, .team-social__button:focus {
+.team-social__link:hover, .team-social__link:focus {
   color: var(--social-active-color);
   background: var(--social-bg-active-color);
 }
@@ -824,11 +824,14 @@ main {
   background: var(--button-hover-color);
 }
 
+.features {
+  padding-bottom: 0px;
+}
+
 .features__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: var(--standart-94px);
 }
 
 .features__content-item {

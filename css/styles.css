@@ -631,7 +631,7 @@ main {
   line-height: 0;
 }
 
-.social-button {
+.social-link {
   color: var(--passive-background);
   background: var(--social-background-main-color);
 }
