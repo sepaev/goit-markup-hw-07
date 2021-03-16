@@ -6,7 +6,7 @@
   &__container {
     @extend .container;
     padding: 60px var(--standart-15px);
-    align-items: flex-start;
+    align-items: baseline;
     height: 100%;
   }
 

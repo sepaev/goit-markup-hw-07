@@ -1,12 +1,14 @@
 .form-mailing {
   display: inline-flex;
   width: 100%;
-  margin-top: 12px;
+  // margin-top: 12px;
   margin-left: var(--standart-94px);
   justify-content: flex-end;
 
+
   &__email-label {
     display: inline-flex;
+    min-width: 219px;
     width: 100%;
     flex-direction: column;
   }
@@ -20,6 +22,7 @@
     align-items: center;
     letter-spacing: 0.03em;
     color: var(--passive-link-color-footer);
+
   }
 
   &__email-input {
@@ -29,10 +32,12 @@
     filter: drop-shadow(0px 4px 4px var(--black-15color));
     border-radius: 4px;
     background-color: transparent;
+    max-width: 358px;
   }
 
   &__text {
     @extend .footer__title;
+    margin-bottom: 0px;
     text-transform: capitalize;
     font-size: 16px;
     line-height: 1.875;
